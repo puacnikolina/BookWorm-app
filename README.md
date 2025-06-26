@@ -28,8 +28,6 @@
 
 ---
 
-## 🚀 Getting Started
-
 ### ✅ Prerequisites
 
 - Android Studio (latest version recommended)
