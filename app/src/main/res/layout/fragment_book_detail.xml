@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <LinearLayout
+            android:id="@+id/top_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_bottom_green"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:paddingTop="32dp"
+            android:paddingBottom="32dp">
+
+            <FrameLayout
+                android:layout_width="180dp"
+                android:layout_height="260dp"
+                android:padding="6dp">
+                <ImageView
+                    android:id="@+id/imageView_details"
+                    android:layout_width="180dp"
+                    android:layout_height="260dp"
+                    android:scaleType="centerCrop"
+                    android:background="@android:color/transparent"
+                    android:elevation="4dp" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView_title_details"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:maxWidth="350dp"
+                android:text="Book title"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:text="Book author"/>
+
+            <TextView
+                android:id="@+id/textView_rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:text="Book rating"/>
+
+            <TextView
+                android:id="@+id/textView_pages"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:text="Page number"/>
+
+            <TextView
+                android:id="@+id/textView_subjects"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                android:text="Genres"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/button_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@color/background_color"
+            android:paddingTop="24dp"
+            android:paddingBottom="8dp"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:gravity="center"
+            android:weightSum="3">
+            <Button
+                android:id="@+id/button_want_to_read"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Want to Read"
+                android:textSize="11sp"
+                android:backgroundTint="@color/dark_yellow"
+                android:textColor="@color/black"
+                android:layout_marginEnd="8dp" />
+            <Button
+                android:id="@+id/button_reading"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Currently Reading"
+                android:textSize="11sp"
+                android:backgroundTint="@color/dark_yellow"
+                android:textColor="@color/black"
+                android:layout_marginEnd="8dp" />
+            <Button
+                android:id="@+id/button_read"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Read"
+                android:textSize="11sp"
+                android:backgroundTint="@color/dark_yellow"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/textView_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="24dp"
+            android:text="Description..."
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:textSize="16sp"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+</ScrollView>

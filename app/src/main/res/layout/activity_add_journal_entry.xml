@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background_color">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/sage_green"
+        app:title="Add Journal Entry"
+        app:titleTextColor="@color/white"/>
+
+
+    <Button
+        android:id="@+id/btn_choose_book"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Book"
+        android:layout_gravity="end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/sage_green"
+        android:textColor="@color/white"/>
+
+
+    <ImageView
+        android:id="@+id/iv_book_cover"
+        android:layout_width="120dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:scaleType="fitCenter"
+        android:contentDescription="Book Cover"
+        android:visibility="gone"/>
+
+
+    <EditText
+        android:id="@+id/et_book_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Book Name"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:enabled="false"
+        android:background="@color/white"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"/>
+
+
+    <EditText
+        android:id="@+id/et_book_author"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Book Author"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:enabled="false"
+        android:background="@color/white"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"/>
+
+
+    <EditText
+        android:id="@+id/et_book_cover_url"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Book Cover URL (optional)"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:enabled="false"
+        android:visibility="gone"/>
+
+
+    <EditText
+        android:id="@+id/et_note_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Note Title"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:background="@color/white"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/et_note_description"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:hint="Write your note here..."
+        android:gravity="top|start"
+        android:padding="16dp"
+        android:background="@color/white"
+        android:textSize="16sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="8dp"/>
+
+
+    <Button
+        android:id="@+id/btn_save_entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_margin="16dp"
+        android:backgroundTint="@color/dark_yellow"
+        android:textColor="@color/black"/>
+
+</LinearLayout> 

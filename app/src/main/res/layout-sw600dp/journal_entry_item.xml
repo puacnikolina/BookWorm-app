@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="6dp"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/iv_book_cover"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:scaleType="fitCenter"
+                android:contentDescription="Book Cover"
+                android:layout_marginEnd="16dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_book_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textColor="@color/black"
+                    android:maxWidth="400dp"
+                    android:text="Book Name" />
+
+                <TextView
+                    android:id="@+id/tv_book_author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="@color/sage_green"
+                    android:text="Author"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:id="@+id/tv_note_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textSize="19sp"
+                    android:textColor="@color/black"
+                    android:text="Note Title"
+                    android:layout_marginTop="8dp" />
+
+                <TextView
+                    android:id="@+id/tv_note_description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:maxWidth="450dp"
+                    android:textColor="@color/black"
+                    android:text="Note Description"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/sage_green"
+                    android:layout_marginTop="8dp"
+                    android:text="2024-01-01" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/btn_edit_note"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="top|end"
+            android:layout_marginEnd="56dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_button"
+            android:src="@drawable/edit_icon"
+            android:backgroundTint="@color/sage_green"
+            android:tint="@color/white"
+            android:contentDescription="Edit note"
+            android:visibility="visible" />
+
+
+        <ImageButton
+            android:id="@+id/btn_delete_note"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="top|end"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/dark_yellow"
+            android:src="@drawable/delete_icon"
+            android:tint="@color/white"
+            android:contentDescription="Delete note"
+            android:visibility="visible" />
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
