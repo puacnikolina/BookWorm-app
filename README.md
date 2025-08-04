@@ -2,7 +2,7 @@
 
 **BookApp** is an Android application for managing your personal book library and reading journal. Search for books, add them to your library, track your reading status, and write journal entries about your reading experiences.
 
-> 🏫 **Note:** This project was developed as part of a university assignment, showcasing practical application of Android development concepts using modern tools and best practices.
+> 🏫 **Note:** This project was developed as part of the university course **Mobile Application Development**, showcasing practical application of Android development concepts using modern tools and best practices.
 
 ---
 
