@@ -4,7 +4,6 @@
 
 > 🏫 **Note:** This project was developed as part of the university course **Mobile Application Development**, showcasing practical application of Android development concepts using modern tools and best practices.
 
----
 
 ## ✨ Features
 
@@ -15,7 +14,6 @@
 - 🖼️ **Cover Images** – Dynamically load and display book covers.
 - 🎨 **Modern UI** – Built with Material Design components for a smooth user experience.
 
----
 
 ## 🛠️ Tech Stack
 
